@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class PallindromeString {
+
+
+    public static void main(String args[]){
+        Scanner sc =new Scanner(System.in);
+        System.out.println("Enter a String");
+        String str=sc.next();
+        String rev="";
+        for(int i=str.length()-1;i>=0;i--){
+            rev+=str.charAt(i);
+        }
+
+        if(str.equals(rev)){
+            System.out.println("Pallindrome String");
+        }else{
+            System.out.println("Not a Pallindrome String");
+        }
+
+    }
+    
+}
