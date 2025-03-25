@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class FirstNonRepeatingChar {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter a String");
+        String str=sc.next();
+        boolean found=false;
+        for(int i=0;i<=str.length()-1;i++){
+            char ch=str.charAt(i);
+            if(str.indexOf(ch)==str.lastIndexOf(ch)){
+                System.out.println("First Non repeating Character is :"+ch);
+                found=true;
+                break;
+            }
+        }
+       if(!found){
+        System.out.println("No repeating Character Found");
+       }
+    }
+    
+}
